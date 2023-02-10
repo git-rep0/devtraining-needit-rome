@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="DELETE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_58872_needit.NeedItExtendedUtils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description>Created a separate Utils as having issues with the original NeedItUtils</description>
+        <name>NeedItExtendedUtils</name>
+        <script><![CDATA[var NeedItExtendedUtils = Class.create();
+NeedItExtendedUtils.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+    countGroupMembers: function() {
+
+        var grpName = "";
+        var groupID = this.getParameter('sysparm_group_id');
+
+        var grpMems = new GlideRecord('sys_user_grmember');
+        grpMems.addQuery('group.sys_id', groupID);
+        grpMems.query();
+
+        if (grpMems.next()) {
+            grpName = grpMems.getDisplayValue('group');
+            gs.error("mh - " + grpName);
+        }
+        if (grpName != "") {
+            var grpMemRowCount = grpMems.getRowCount();
+            gs.error("mh - " + grpMemRowCount);
+        }
+        return grpMemRowCount;
+    },
+
+    type: 'NeedItExtendedUtils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>servicenow@sccnow.onmicrosoft.com</sys_created_by>
+        <sys_created_on>2023-02-02 14:15:35</sys_created_on>
+        <sys_id>25a6a74997342110979cfef3a253af0e</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>NeedItExtendedUtils</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_25a6a74997342110979cfef3a253af0e</sys_update_name>
+        <sys_updated_by>servicenow@sccnow.onmicrosoft.com</sys_updated_by>
+        <sys_updated_on>2023-02-02 14:18:32</sys_updated_on>
+    </sys_script_include>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</application>
+        <file_path/>
+        <instance_id>b3aedfccdb5268d04d2bac44d49619d8</instance_id>
+        <instance_name>dev106635</instance_name>
+        <name>sys_script_include_25a6a74997342110979cfef3a253af0e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_script_include"&gt;&lt;sys_script_include action="INSERT_OR_UPDATE"&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;active&gt;true&lt;/active&gt;&lt;api_name&gt;x_58872_needit.NeedItExtendedUtils&lt;/api_name&gt;&lt;caller_access/&gt;&lt;client_callable&gt;true&lt;/client_callable&gt;&lt;description&gt;Created a separate Utils as having issues with the original NeedItUtils&lt;/description&gt;&lt;name&gt;NeedItExtendedUtils&lt;/name&gt;&lt;script&gt;&lt;![CDATA[var NeedItExtendedUtils = Class.create();
+NeedItExtendedUtils.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+    countGroupMembers: function() {
+
+        var grpName = "";
+        var groupID = this.getParameter('sysparm_group_id');
+
+        var grpMems = new GlideRecord('sys_user_grmember');
+        grpMems.addQuery('group.sys_id', groupID);
+        grpMems.query();
+
+        if (grpMems.next()) {
+            grpName = grpMems.getDisplayValue('group');
+            gs.error("mh - " + grpName);
+        }
+        if (grpName != "") {
+            var grpMemRowCount = grpMems.getRowCount();
+            gs.error("mh - " + grpMemRowCount);
+        }
+        return grpMemRowCount;
+    },
+
+    type: 'NeedItExtendedUtils'
+});]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script_include&lt;/sys_class_name&gt;&lt;sys_created_by&gt;servicenow@sccnow.onmicrosoft.com&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2023-02-02 14:15:35&lt;/sys_created_on&gt;&lt;sys_id&gt;25a6a74997342110979cfef3a253af0e&lt;/sys_id&gt;&lt;sys_mod_count&gt;4&lt;/sys_mod_count&gt;&lt;sys_name&gt;NeedItExtendedUtils&lt;/sys_name&gt;&lt;sys_package display_value="NeedIt" source="x_58872_needit"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_package&gt;&lt;sys_policy&gt;read&lt;/sys_policy&gt;&lt;sys_scope display_value="NeedIt"&gt;6ead8e780f603200cd674f8ce1050ed1&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_include_25a6a74997342110979cfef3a253af0e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;servicenow@sccnow.onmicrosoft.com&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2023-02-02 14:18:32&lt;/sys_updated_on&gt;&lt;/sys_script_include&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>1058652363</payload_hash>
+        <record_name>NeedItExtendedUtils</record_name>
+        <reverted_from/>
+        <source>3e468c6997781110979cfef3a253afdc</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>servicenow@sccnow.onmicrosoft.com</sys_created_by>
+        <sys_created_on>2023-02-02 14:18:32</sys_created_on>
+        <sys_id>a6a7eb8997342110979cfef3a253afa5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>186127e4e3b0000001</sys_recorded_at>
+        <sys_updated_by>servicenow@sccnow.onmicrosoft.com</sys_updated_by>
+        <sys_updated_on>2023-02-02 14:18:32</sys_updated_on>
+        <type>Script Include</type>
+        <update_guid>2ea7eb89ca34211009438c5e131c5fa4</update_guid>
+        <update_guid_history>2ea7eb89ca34211009438c5e131c5fa4:1058652363,ea572789a9342110518d08534330b63e:1932367194,8927afc5f43421105f19def83ec892d9:391047413,43176789683421101e2307ded18f5a44:1058652363,d3f6678937342110c1b3c6a159f54540:1932367194</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>servicenow@sccnow.onmicrosoft.com</sys_created_by>
+        <sys_created_on>2023-02-02 14:18:43</sys_created_on>
+        <sys_db_object display_value="" name="sys_script_include">sys_script_include</sys_db_object>
+        <sys_id>373753904b9f4b18aefc347b7692f0d9</sys_id>
+        <sys_metadata>25a6a74997342110979cfef3a253af0e</sys_metadata>
+        <sys_name>NeedItExtendedUtils</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_parent/>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_scope_delete display_value="">94872a8897db403e8ee69a431de2fca4</sys_scope_delete>
+        <sys_update_name>sys_script_include_25a6a74997342110979cfef3a253af0e</sys_update_name>
+        <sys_update_version display_value="sys_script_include_25a6a74997342110979cfef3a253af0e">a6a7eb8997342110979cfef3a253afa5</sys_update_version>
+    </sys_metadata_delete>
+</record_update>

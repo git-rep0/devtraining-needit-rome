@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_group_member_count" label="Group member count" language="en" table="x_58872_needit_needit">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_group_member_count</element>
+            <help/>
+            <hint/>
+            <label>Group member count</label>
+            <language>en</language>
+            <name>x_58872_needit_needit</name>
+            <plural>Group member counts</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>servicenow@sccnow.onmicrosoft.com</sys_created_by>
+            <sys_created_on>2023-02-02 11:40:14</sys_created_on>
+            <sys_name>Group member count</sys_name>
+            <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+            <sys_update_name>sys_documentation_x_58872_needit_needit_u_group_member_count_en</sys_update_name>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

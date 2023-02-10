@@ -1,25 +1,40 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<database>
-    <element audit="true" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="5d2313950718c5107410f96d7c1ed02e" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Parent NeedIt" max_length="40" name="parent_needit" reference="x_58872_needit_needit" type="reference"/>
+        <element attributes="encode_utf8=false" dependent="assignment_group" dependent_on_field="assignment_group" label="Agent" max_length="32" name="u_assigned_agent" reference="sys_user" type="reference" use_dependent_field="true"/>
+        <element attributes="encode_utf8=false" label="Assignment group" max_length="32" name="u_assignment_group" reference="sys_user_group" type="reference"/>
+        <element attributes="encode_utf8=false" label="Caused by Change" max_length="32" name="u_caused_by_change" reference="change_request" type="reference"/>
+        <element attributes="encode_utf8=false" label="Change Request" max_length="32" name="u_change_request_number" reference="change_request" type="reference"/>
+        <element attributes="encode_utf8=false" label="Demand" max_length="32" name="u_demand_number" reference="dmn_demand" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Group member count" max_length="40" name="u_group_member_count" read_only="true" type="string"/>
+        <element attributes="encode_utf8=false" label="Idea" max_length="32" name="u_idea_number" reference="idea" type="reference"/>
+        <element attributes="encode_utf8=false" label="Incident" max_length="32" name="u_incident_number" reference="incident" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Other" max_length="40" name="u_other" type="string"/>
+        <element attributes="encode_utf8=false" label="Project" max_length="32" name="u_project_number" reference="pm_project" type="reference"/>
         <element label="Requested for" mandatory="true" max_length="32" name="u_requested_for" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Requested for email" mandatory="true" max_length="40" name="u_requested_for_email" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="legal" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Request type" mandatory="true" max_length="40" name="u_request_type" type="string">
             <choice>
-                <element label="Human Resources" sequence="0" value="hr"/>
-                <element label="Facilities" sequence="1" value="facilities"/>
-                <element label="Legal" sequence="2" value="legal"/>
+                <element inactive="true" inactive_on_update="true" label="Developer Enablement" sequence="0" value="dev_enable"/>
+                <element inactive_on_update="false" label="Platform" sequence="0" value="platform"/>
+                <element inactive_on_update="false" label="Home Lab" sequence="1" value="home_lab"/>
+                <element inactive="true" inactive_on_update="true" label="Legal" sequence="1" value="legal"/>
+                <element inactive="true" inactive_on_update="true" label="Facilities" sequence="2" value="facilities"/>
+                <element inactive="true" inactive_on_update="true" label="Human Resources" sequence="3" value="hr"/>
+                <element inactive="true" inactive_on_update="true" label="Test" sequence="4" value="test"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="hr1" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="u_request_type" dependent_on_field="u_request_type" label="What needed" mandatory="true" max_length="40" name="u_what_needed" type="string" use_dependent_field="true">
             <choice>
-                <element label="Human Resources 1" sequence="0" value="hr1"/>
-                <element label="Human Resources 2" sequence="1" value="hr2"/>
-                <element label="Facilities 1" sequence="2" value="facilities1"/>
-                <element label="Facilities 2" sequence="3" value="facilities2"/>
-                <element label="Legal 1" sequence="4" value="legal1"/>
-                <element label="Legal 2" sequence="5" value="legal2"/>
-                <element label="Other" sequence="6" value="other"/>
+                <element inactive="true" inactive_on_update="true" label="Human Resources 1" sequence="0" value="hr1"/>
+                <element dependent_value="platform" inactive_on_update="false" label="ServiceNow config" sequence="0" value="sn_config"/>
+                <element inactive="true" inactive_on_update="true" label="Human Resources 2" sequence="1" value="hr2"/>
+                <element dependent_value="home_lab" inactive_on_update="false" label="External systems config" sequence="2" value="ext_system_config"/>
+                <element inactive="true" inactive_on_update="true" label="Facilities 1" sequence="2" value="facilities1"/>
+                <element inactive="true" inactive_on_update="true" label="Facilities 2" sequence="3" value="facilities2"/>
+                <element inactive_on_update="false" label="Other" sequence="3" value="other"/>
+                <element inactive="true" inactive_on_update="true" label="Legal 1" sequence="4" value="legal1"/>
+                <element inactive="true" inactive_on_update="true" label="Legal 2" sequence="5" value="legal2"/>
             </choice>
         </element>
         <element label="When needed" mandatory="true" max_length="40" name="u_when_needed" type="glide_date_time"/>
