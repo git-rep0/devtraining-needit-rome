@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="needit_state" table="x_58872_needit_needit" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>needit_state</element>
+            <name>x_58872_needit_needit</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>servicenow@sccnow.onmicrosoft.com</sys_created_by>
+            <sys_created_on>2023-05-22 15:19:10</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>needit_state</sys_name>
+            <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+            <sys_update_name>sys_choice_x_58872_needit_needit_needit_state</sys_update_name>
+            <sys_updated_by>servicenow@sccnow.onmicrosoft.com</sys_updated_by>
+            <sys_updated_on>2023-05-22 15:19:10</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>needit_state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Requested</label>
+            <language>en</language>
+            <name>x_58872_needit_needit</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>servicenow@sccnow.onmicrosoft.com</sys_created_by>
+            <sys_created_on>2023-05-22 15:27:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>servicenow@sccnow.onmicrosoft.com</sys_updated_by>
+            <sys_updated_on>2023-05-22 15:37:47</sys_updated_on>
+            <value>13</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>needit_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>New</label>
+            <language>en</language>
+            <name>x_58872_needit_needit</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>servicenow@sccnow.onmicrosoft.com</sys_created_by>
+            <sys_created_on>2023-05-22 15:19:10</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>7</sys_mod_count>
+            <sys_updated_by>servicenow@sccnow.onmicrosoft.com</sys_updated_by>
+            <sys_updated_on>2023-05-22 15:43:10</sys_updated_on>
+            <value>1</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>needit_state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Awaiting Approval</label>
+            <language>en</language>
+            <name>x_58872_needit_needit</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>servicenow@sccnow.onmicrosoft.com</sys_created_by>
+            <sys_created_on>2023-05-22 15:27:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>servicenow@sccnow.onmicrosoft.com</sys_updated_by>
+            <sys_updated_on>2023-05-22 15:41:25</sys_updated_on>
+            <value>14</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>needit_state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>In Progress</label>
+            <language>en</language>
+            <name>x_58872_needit_needit</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>servicenow@sccnow.onmicrosoft.com</sys_created_by>
+            <sys_created_on>2023-05-22 15:19:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>servicenow@sccnow.onmicrosoft.com</sys_updated_by>
+            <sys_updated_on>2023-05-22 15:27:43</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>needit_state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Approved</label>
+            <language>en</language>
+            <name>x_58872_needit_needit</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>servicenow@sccnow.onmicrosoft.com</sys_created_by>
+            <sys_created_on>2023-05-22 15:27:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>servicenow@sccnow.onmicrosoft.com</sys_updated_by>
+            <sys_updated_on>2023-05-22 15:41:37</sys_updated_on>
+            <value>15</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>needit_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>In Progress</label>
+            <language>en</language>
+            <name>x_58872_needit_needit</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>servicenow@sccnow.onmicrosoft.com</sys_created_by>
+            <sys_created_on>2023-05-22 15:31:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>servicenow@sccnow.onmicrosoft.com</sys_updated_by>
+            <sys_updated_on>2023-05-22 15:31:27</sys_updated_on>
+            <value>2</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>needit_state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Awaiting Feedback</label>
+            <language>en</language>
+            <name>x_58872_needit_needit</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>servicenow@sccnow.onmicrosoft.com</sys_created_by>
+            <sys_created_on>2023-05-22 15:27:42</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>servicenow@sccnow.onmicrosoft.com</sys_updated_by>
+            <sys_updated_on>2023-05-22 15:37:54</sys_updated_on>
+            <value>16</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>needit_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>On Hold</label>
+            <language>en</language>
+            <name>x_58872_needit_needit</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>servicenow@sccnow.onmicrosoft.com</sys_created_by>
+            <sys_created_on>2023-05-22 15:39:28</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>servicenow@sccnow.onmicrosoft.com</sys_updated_by>
+            <sys_updated_on>2023-05-22 15:39:56</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>needit_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Closed</label>
+            <language>en</language>
+            <name>x_58872_needit_needit</name>
+            <sequence>3</sequence>
+            <synonyms/>
+            <sys_created_by>servicenow@sccnow.onmicrosoft.com</sys_created_by>
+            <sys_created_on>2023-05-22 15:21:02</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>servicenow@sccnow.onmicrosoft.com</sys_updated_by>
+            <sys_updated_on>2023-05-22 15:40:36</sys_updated_on>
+            <value>7</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>needit_state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Closed Complete</label>
+            <language>en</language>
+            <name>x_58872_needit_needit</name>
+            <sequence>4</sequence>
+            <synonyms/>
+            <sys_created_by>servicenow@sccnow.onmicrosoft.com</sys_created_by>
+            <sys_created_on>2023-05-22 15:20:03</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>servicenow@sccnow.onmicrosoft.com</sys_updated_by>
+            <sys_updated_on>2023-05-22 15:41:12</sys_updated_on>
+            <value>3</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>needit_state</element>
+            <hint/>
+            <inactive>true</inactive>
+            <label>Withdrawn</label>
+            <language>en</language>
+            <name>x_58872_needit_needit</name>
+            <sequence>5</sequence>
+            <synonyms/>
+            <sys_created_by>servicenow@sccnow.onmicrosoft.com</sys_created_by>
+            <sys_created_on>2023-05-22 15:21:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_updated_by>servicenow@sccnow.onmicrosoft.com</sys_updated_by>
+            <sys_updated_on>2023-05-22 15:41:01</sys_updated_on>
+            <value>8</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>needit_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Resolved</label>
+            <language>en</language>
+            <name>x_58872_needit_needit</name>
+            <sequence>6</sequence>
+            <synonyms/>
+            <sys_created_by>servicenow@sccnow.onmicrosoft.com</sys_created_by>
+            <sys_created_on>2023-05-22 15:20:36</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>6</sys_mod_count>
+            <sys_updated_by>servicenow@sccnow.onmicrosoft.com</sys_updated_by>
+            <sys_updated_on>2023-05-22 15:40:11</sys_updated_on>
+            <value>6</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>needit_state</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Canceled</label>
+            <language>en</language>
+            <name>x_58872_needit_needit</name>
+            <sequence>8</sequence>
+            <synonyms/>
+            <sys_created_by>servicenow@sccnow.onmicrosoft.com</sys_created_by>
+            <sys_created_on>2023-05-22 15:40:49</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_updated_by>servicenow@sccnow.onmicrosoft.com</sys_updated_by>
+            <sys_updated_on>2023-05-22 15:40:56</sys_updated_on>
+            <value>8</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element audit="true" db_object_id="5d2313950718c5107410f96d7c1ed02e" extends="task" label="NeedIt" max_length="40" name="x_58872_needit_needit" type="collection">
+        <element attributes="ignore_filter_on_new=true" choice="3" choice_field="needit_state" choice_table="x_58872_needit_needit" default="1" label="State" mandatory="true" max_length="40" name="needit_state" type="integer">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Requested" sequence="0" value="13"/>
+                <element inactive="true" inactive_on_update="true" label="Awaiting Approval" sequence="1" value="14"/>
+                <element inactive="true" inactive_on_update="true" label="In Progress" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="New" sequence="1" value="1"/>
+                <element inactive="true" inactive_on_update="true" label="Approved" sequence="2" value="15"/>
+                <element inactive_on_update="false" label="In Progress" sequence="2" value="2"/>
+                <element inactive="true" inactive_on_update="true" label="Awaiting Feedback" sequence="3" value="16"/>
+                <element inactive_on_update="false" label="Closed" sequence="3" value="7"/>
+                <element inactive_on_update="false" label="On Hold" sequence="3" value="3"/>
+                <element inactive="true" inactive_on_update="true" label="Closed Complete" sequence="4" value="3"/>
+                <element inactive="true" inactive_on_update="true" label="Withdrawn" sequence="5" value="8"/>
+                <element inactive_on_update="false" label="Resolved" sequence="6" value="6"/>
+                <element inactive_on_update="false" label="Canceled" sequence="8" value="8"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" label="Parent NeedIt" max_length="40" name="parent_needit" reference="x_58872_needit_needit" type="reference"/>
         <element attributes="encode_utf8=false" dependent="assignment_group" dependent_on_field="assignment_group" label="Agent" max_length="32" name="u_assigned_agent" reference="sys_user" type="reference" use_dependent_field="true"/>
         <element attributes="encode_utf8=false" label="Assignment group" max_length="32" name="u_assignment_group" reference="sys_user_group" type="reference"/>

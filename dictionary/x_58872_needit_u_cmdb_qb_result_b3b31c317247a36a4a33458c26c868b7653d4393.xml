@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="ignore_baseline=true" db_object_id="7881c1d0974b6190979cfef3a253af45" extends="cmdb_qb_result_base" label="Projects on a Business Application-Query Results" max_length="40" name="x_58872_needit_u_cmdb_qb_result_b3b31c317247a36a4a33458c26c868b7653d4393" type="collection"/>
+</database>
